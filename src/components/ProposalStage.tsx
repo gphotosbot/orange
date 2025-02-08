@@ -55,7 +55,7 @@ export function ProposalStage({ onAccept }: ProposalStageProps) {
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [noCount]);
+  }, [noCount, messages.length]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-100 to-rose-200 flex flex-col items-center justify-center p-4">
